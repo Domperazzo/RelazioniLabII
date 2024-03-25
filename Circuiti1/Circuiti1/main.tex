@@ -1,0 +1,67 @@
+\documentclass[a4paper,12pt, italian]{article}
+\usepackage{geometry}
+\geometry{a4paper, top=3cm, bottom=3cm, left=2.5cm, right=2.5cm, heightrounded, bindingoffset=5mm}
+\usepackage[italian]{babel}
+\usepackage[version=3]{mhchem} 
+\usepackage{siunitx} 
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{natbib} 
+\usepackage{amsmath}
+\usepackage{hyperref}
+%\usepackage[labelformat=empty]{caption}
+\setlength\parindent{15pt}
+\usepackage{natbib}
+\usepackage{amscd}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{float}
+\usepackage{placeins} %aggiungi questo package e usa \FloatBarrier all'inizio e alla fine della sequenza di tabelle
+\usepackage[labelsep=space]{caption} 
+\renewcommand{\labelenumi}{\alph{enumi}.} 
+\newcommand{\minitab}[2][l]{\begin{tabular}#1 #2\end{tabular}}
+\newcommand{\angstrom}{\mbox{\normalfont\AA}}
+
+\title{\textsc{Verifica della Legge di Ohm\\
+Studio delle resistenze\\
+Caratterizzazione corrente-tensione di un dispositivo non lineare}}
+\date{}
+
+\author{Laura \textsc{Trombetta}\\ Alessandro Maria \textsc{Turturiello}\\Federico \textsc{Venturoli}} 
+
+
+
+\begin{document}
+
+\maketitle 
+
+\begin{center}
+\begin{tabular}{l r}
+Eseguita il giorno: &  5 maggio 2022 \\ 
+Gruppo T2A-4: & Trombetta Laura\\
+& Turturiello Alessandro Maria \\
+& Venturoli Federico \\ 
+
+\end{tabular}
+\end{center}
+\begin{abstract}
+Lo scopo dell'esperienza è stato quello di studiare il funzionamento di un circuito, attraverso la Legge di Ohm, a seconda della posizione di una o più resistenze. E' stato anche caratterizzato l'andamento tensione-corrente di un dispositivo non lineare, nel nostro caso un diodo.
+\end{abstract}
+\tableofcontents
+\maketitle
+\newpage
+
+\input{Introduzione e descrizione dell'apparato sperimentale}
+\input{Misura della caratteristica corrente-tensione di un resistore}
+\input{Partitore resistivo}
+\input{Misura della caratteristica corrente-tensione di un diodo}
+\input{Conclusioni}
+
+
+\end{document}

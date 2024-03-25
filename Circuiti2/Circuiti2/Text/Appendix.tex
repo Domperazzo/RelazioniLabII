@@ -1,0 +1,26 @@
+\appendix
+% Delete the text and write Appendix here (not required, can be omitted):
+% Comment out ' \input{Text/Appendix} ' to remove this section.
+%------------------------------------
+
+\section{Algoritmo Try \& Catch}
+
+\begin{listing}[h!]
+
+\inputminted[%
+firstline=32, 
+lastline=53,
+bgcolor=LightGray,
+breaklines,
+breaksymbolleft={},
+breakindent={15pt}
+]{c++}{Code/Python/main.cpp}
+
+\caption{Algoritmo utilizzato per generare errori}
+\label{listing:1}
+\end{listing}
+
+L'algoritmo utilizzato è basato sul metodo \textit{try and catch}. Tale metodo risulta molto utile nel caso in cui si debbano generare numeri pseudocasuali che seguano una determinata \textit{pdf}, in questo caso gaussiana. La funzione \verb+rand()+ genera coppie di numeri pseudocasuali $(x,\,y)$ distribuiti secondo una \textit{pdf} uniforme. Di tale coppia di numeri il valore che andremo a considerare come $r.v.$ distribuita secondo tale $pdf$ è la coordinata $x$. Tale coordinata è ritenuta valida se e solo se $y_i < f(x_i)$, dove la funzione $f(x)$ è la \textit{pdf} che si è scelta, in questo caso una gaussiana definita nella funzione \verb+fgaus()+.
+
+
+Un algoritmo di questo tipo presenta sia vantaggi che svantaggi. Il vantaggio principale consiste nel fatto che non è necessario che la \textit{pdf} sia nota analiticamente, infatti è sufficiente riuscire a esprimerla in termini di funzione nel linguaggio di programmazione scelto ed inoltre è facilmente estendibile a dimensioni maggiori di $1$. Lo svantaggio principale riguarda il costo computazionale caratteristico questo algoritmo. Infatti per la generazione di una \textit{r.v.} distribuita secondo la \textit{pdf} richiesta è necessario generare sicuramente almeno due valori pseudocasuali, spesso ne sono necessari molti di più in quanto molti punti sul piano vengono scartati.

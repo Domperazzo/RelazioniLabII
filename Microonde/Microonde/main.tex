@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt, italian]{article}
+\usepackage{geometry}
+\geometry{a4paper, top=3cm, bottom=3cm, left=3cm, right=3cm, heightrounded, bindingoffset=5mm}
+\usepackage[italian]{babel}
+\usepackage[version=3]{mhchem} 
+\usepackage{siunitx} 
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{natbib} 
+\usepackage{amsmath}
+\usepackage{hyperref}
+%\usepackage[labelformat=empty]{caption}
+\setlength\parindent{15pt}
+\usepackage{natbib}
+\usepackage{amscd}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{placeins} %aggiungi questo package e usa \FloatBarrier all'inizio e alla fine della sequenza di tabelle
+\usepackage[labelsep=space]{caption} 
+\renewcommand{\labelenumi}{\alph{enumi}.} 
+\newcommand{\minitab}[2][l]{\begin{tabular}#1 #2\end{tabular}}
+
+\title{\textsc{Studio delle leggi che governano le inteterferenze con sorgenti nello spettro delle microonde}}
+\date{}
+
+\author{Laura \textsc{Trombetta}\\ Alessandro Maria \textsc{Turturiello}\\Federico \textsc{Venturoli}} 
+
+
+
+\begin{document}
+
+\maketitle 
+
+\begin{center}
+\begin{tabular}{l r}
+Eseguita il giorno: &  31 marzo 2022 \\ 
+Gruppo T2A-4: & Trombetta Laura\\
+& Turturiello Alessandro Maria \\
+& Venturoli Federico \\ 
+
+\end{tabular}
+\end{center}
+\begin{abstract}
+    Lo scopo della relazione è lo studio delle leggi dell'ottica, grazie all'utilizzo di un'onda elettromagnetica che rientra nel range delle microonde.
+    Abbiamo condotto molteplici esperimenti per verificare le leggi di polarizzazione, riflessione, rifrazione, interferenza e la natura stazionaria dell'onda in specifiche condizioni. Gli esperimenti hanno avuto nel complesso risultati soddisfacenti, in caso contrario siamo riusciti ad identificare la sorgente dell'errore, in modo da non invalidare la legge che stavamo verificando. 
+\end{abstract}
+\tableofcontents
+\maketitle
+\newpage
+
+\input{Introduzione e descrizione dell'apparato sperimentale}
+\input{Onde stazionarie}
+\input{Riflessione e rifrazione}
+\input{Polarizzazione}
+\input{Angolo di Brewster}
+\input{Interferenza}
+\input{Conclusioni}
+
+\end{document}

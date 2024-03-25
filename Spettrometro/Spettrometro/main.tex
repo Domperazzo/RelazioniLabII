@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt, italian]{article}
+\usepackage{geometry}
+\geometry{a4paper, top=3cm, bottom=3cm, left=2.5cm, right=2.5cm, heightrounded, bindingoffset=5mm}
+\usepackage[italian]{babel}
+\usepackage[version=3]{mhchem} 
+\usepackage{siunitx} 
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{natbib} 
+\usepackage{amsmath}
+\usepackage{hyperref}
+%\usepackage[labelformat=empty]{caption}
+\setlength\parindent{15pt}
+\usepackage{natbib}
+\usepackage{amscd}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{placeins} %aggiungi questo package e usa \FloatBarrier all'inizio e alla fine della sequenza di tabelle
+\usepackage[labelsep=space]{caption} 
+\renewcommand{\labelenumi}{\alph{enumi}.} 
+\newcommand{\minitab}[2][l]{\begin{tabular}#1 #2\end{tabular}}
+\newcommand{\angstrom}{\mbox{\normalfont\AA}}
+
+\title{\textsc{Verifica sperimentale e applicazioni della legge di Cauchy \\
+Verifica delle leggi d'interferenza tramite un reticolo}}
+\date{}
+
+\author{Laura \textsc{Trombetta}\\ Alessandro Maria \textsc{Turturiello}\\Federico \textsc{Venturoli}} 
+
+
+
+\begin{document}
+
+\maketitle 
+
+\begin{center}
+\begin{tabular}{l r}
+Eseguita il giorno: &  21 aprile 2022 \\ 
+Gruppo T2A-4: & Trombetta Laura\\
+& Turturiello Alessandro Maria \\
+& Venturoli Federico \\ 
+
+\end{tabular}
+\end{center}
+\begin{abstract}
+Lo scopo della relazione consiste nel verificare la legge di Cauchy determinandone i fattori di proporzionalità tramite l'utilizzo di una sorgente luminosa nota. Utilizzando tali parametri si sfrutta la legge per risalire alla natura del gas ignoto contenuto in lampade che fungono da sorgente usando la relazione tra indice di rifrazione del prisma $n$ e la lunghezza d'onda $\lambda$.
+\end{abstract}
+\tableofcontents
+\maketitle
+\newpage
+
+\input{Introduzione e descrizione dell'apparato sperimentale}
+\input{Messa a fuoco}
+\input{Studio attraverso il prisma}
+\input{Studio attraverso il reticolo}
+\input{Studio gas ignoto}
+\input{Conclusioni}
+
+\end{document}

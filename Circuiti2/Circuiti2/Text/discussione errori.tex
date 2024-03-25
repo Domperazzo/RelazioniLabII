@@ -1,0 +1,10 @@
+\section{Discussione errori}
+\label{discussione errori}
+L'errore associato ad ogni misura è stato generato tramite un algoritmo per la generazione di numeri pseudocasuali. Infatti, eseguendo una misura del segnale senza elementi circuitali inseriti, si osserva che è sempre presente un segnale di disturbo che quindi va ad intaccare ogni misurazione variando l'intensità del segnale misurato.
+
+Siccome è presente in ogni misurazione abbiamo ritenuto plausibile considerarlo come la principale fonte di errore, inoltre a questa fonte si deve aggiungere l'errore sistematico intrinseco dello strumento. Tale errore è stato valutato come la sensibilità dello strumento. Un ulteriore elemento a favore di questa ipotesi è che le misure sono state raccolte direttamente dallo strumento tramite una chiavetta USB per cui, a meno di errori dovuti a malfunzionamenti interni della strumentazione impossibili da identificare, possibili fonti esterne di errore sono da scartare. 
+
+Analizzando il segnale di disturbo si è notata la presenza di valori misurati di tensione distribuiti in maniera casuale. Per tale ragione si è utilizzato un algoritmo di generazione di numeri pseudocasuali distribuiti secondo una \textit{pdf} gaussiana.
+
+La scelta della \textit{pdf} è motivata dal fatto che i valori di tensione osservati erano meno densi agli estremi dell'intervallo mentre la densità aumentava gradualmente spostandosi nel centro dello stesso.
+

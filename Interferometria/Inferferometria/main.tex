@@ -1,0 +1,62 @@
+\documentclass{article}
+\documentclass[a4paper,12pt, italian]{article}
+\usepackage{geometry}
+\geometry{a4paper, top=3cm, bottom=3cm, left=3cm, right=3cm, heightrounded, bindingoffset=5mm}
+\usepackage[italian]{babel}
+\usepackage[version=3]{mhchem} 
+\usepackage{siunitx} 
+\usepackage{graphicx}
+\usepackage{natbib} 
+\usepackage{amsmath}
+\usepackage{hyperref}
+%\usepackage[labelformat=empty]{caption}
+\setlength\parindent{15pt}
+\usepackage{natbib}
+\usepackage{amscd}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage{tikz}
+\usepackage{cancel}
+\usepackage{placeins} %aggiungi questo package e usa \FloatBarrier all'inizio e alla fine della sequenza di tabelle
+\usepackage[labelsep=space]{caption} 
+\renewcommand{\labelenumi}{\alph{enumi}.} 
+\newcommand{\minitab}[2][l]{\begin{tabular}#1 #2\end{tabular}}
+
+\title{\textsc{Studio delle leggi dell'ottica tramite il fenomeno dell'interferenza}}
+
+\author{Laura \textsc{Trombetta}\\ Alessandro Maria \textsc{Turturiello}\\Federico \textsc{Venturoli}} 
+
+
+
+\begin{document}
+
+\maketitle 
+
+\begin{center}
+\begin{tabular}{l r}
+Eseguita il giorno: &  17 marzo 2022 \\ 
+Gruppo T2A-4: & Trombetta Laura\\
+& Turturuello Alessandro Maria \\
+& Venturoli Federico \\ 
+
+\end{tabular}
+\end{center}
+\begin{abstract}
+    Lo scopo della presente relazione è quello di esporre i metodi sperimentali utilizzati durante l'esperienza riguardante i fenomeni di interferenza luminosa. Inoltre, tramite questo fenomeno si è in grado, tramite le relazioni espresse dalle equazioni \ref{aria} e \ref{eq 3}, di ricavare l'indice di rifrazione dell'aria e del vetro.
+\end{abstract}
+\tableofcontents
+\maketitle
+\newpage
+
+\input{Introduzione teorica}
+\input{calibrazione}
+\input{laser verde}
+\input{rifrazione aria}
+\input{rifrazione vetro}
+%\input{esperienza virtuale}
+\input{conclusioni}
+\end{document}

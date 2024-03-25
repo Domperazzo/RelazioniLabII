@@ -1,0 +1,49 @@
+\newlength{\bibsep}
+\documentclass[nonatbib,5p,a4paper]{elsarticle}  % 5p for two columns, 1p for 1 column (this is specific for the elsearticle)
+\usepackage[italian,norsk,nynorsk]{babel}        % Language
+\usepackage[DatePublished]{Code/NTNU-lab}        % remove [DatePublished] to remove dates
+\usepackage{csquotes}                            % Must be loaded when babel is loaded to avoid error.
+\input{Code/preamble}                            % Write all preamble code in this file to keep it organised and tidy.
+
+\addbibresource{Bibliography/Sources.bib}        % Selects the Bibliography file.
+
+
+\begin{document}
+\selectlanguage{italian}                         % Sets the language of the document.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{Text/0-frontmatter}
+%\input{Text/0.2-Nomenclatures}                 % List of symbols, can be useful
+\input{Text/Introduzione e descrizione dell'apparato sperimentale}
+%\input{Text/0.1-Big_Figures}                    % Change this to another line to move big figures.
+\input{Text/Messa a fuoco}
+\input{Text/Studio attraverso il reticolo}
+\input{Text/discussione errori}
+\input{Text/Conclusioni}
+%\clearpage                                     % Sometimes you want the rest on separate pages.
+                % Comment out to exclude the Acknowledgements section
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Bibliography
+%--------------------
+
+
+\clearpage                                     % Sometimes it is useful to have appendix on separate page.
+%\onecolumn                                     % If you want 1 column for appendix.
+\input{Text/Appendix}                           % Comment out to exclude appendix
+
+\end{document}
+
+% Notes on Copyright:
+%--------------------
+
+% Feel free to use this template as you like.
+% I do not require users to give me credit for
+% the use of this template, unless you share
+% a verbatim (word for word) LaTeX code copy
+% on the internet.
+
+% The author may or may not release a new 
+% update/ new version of this template.
